@@ -1,10 +1,8 @@
 import { CohereClient } from "cohere-ai";
-import { env } from "../../config/envs/environments";
-
-const TOKEN = env.cohere.cohere_api_key;
+import { env } from "../config/envs/environments";
 
 export async function chatWithCohere(prompt: string): Promise<string> {
-  const cohere = new CohereClient({ token: TOKEN });
+  const cohere = new CohereClient({ token: env.cohere.cohere_api_key });
 
   try {
     const response = await cohere.chatStream({

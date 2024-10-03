@@ -4,7 +4,7 @@
   "main": "./src/main.ts",
   "scripts": {
     "build": "tsup src/main.ts --format esm --dts",
-    "start": "node dist/src/main.js",
+    "start": "node dist/main.mjs",
     "dev": "ts-node-dev --respawn --transpile-only ./src/main.ts"
   },
   "private": true,
