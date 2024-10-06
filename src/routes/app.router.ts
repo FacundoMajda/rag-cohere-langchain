@@ -1,9 +1,8 @@
-import {Router} from 'express'
-import {smartSearch} from "../controllers/research.controller";
+import { Router } from "express";
+import { chatPDF } from "../controllers/chat-pdf.controller";
 
-const router = Router()
+const router = Router();
 
-router.post("/search", smartSearch)
-router.get("/")
+router.post("/chat-pdf", chatPDF);
 
 export default router;

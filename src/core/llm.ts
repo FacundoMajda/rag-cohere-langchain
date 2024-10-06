@@ -1,5 +1,6 @@
 import { ChatCohere } from "@langchain/cohere";
 import { env } from "../config/envs/environments";
+import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 
 const API_KEY = env.cohere.cohere_api_key;
 

@@ -1,6 +1,7 @@
 import "dotenv/config";
 
 export const env = {
+  gemini: { gemini_api_key: process.env.GEMINI_API_KEY },
   cohere: {
     cohere_api_key: process.env.COHERE_API_KEY,
   },
